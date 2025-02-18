@@ -1,0 +1,199 @@
+/* index.module.css */
+
+/* General styles */
+.main,
+.main input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0; /* Light text color for dark mode */
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  color: white;
+  height: 840px;
+}
+
+.main h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+  margin: 16px 0 40px;
+}
+
+.body {
+  background: rgb(18, 18, 18); /* Dark background */
+  margin: -10px;
+}
+
+/* Chat button */
+.chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: #1e3a8a; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatWindow {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #333; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 999;
+}
+
+.chatHeader {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* White header text */
+  margin-bottom: 10px;
+}
+
+.chatMessages {
+  flex: 1;
+  overflow-y: auto; /* Scrollable area */
+  padding: 10px;
+  background-color: #444; /* Slightly lighter for contrast */
+  border-radius: 5px;
+  color: white; /* White text for messages */
+}
+
+.chatInput {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #444; /* Dark input field */
+  color: white; /* White text inside the input */
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.chatInput button {
+  padding: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatInput button:hover {
+  background-color: #2b8a67;
+}
+
+.userMessage {
+  color: #1e90ff; /* Blue for user messages */
+  margin-bottom: 5px;
+}
+
+.assistantMessage {
+  color: #32cd32; /* Green for assistant messages */
+  margin-bottom: 5px;
+}
+/* Toggle View */
+.toggleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggleButton {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.activeToggle {
+  background-color: #1e3a8a;
+}
+
+/* Card View */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+  color: #1e90ff;
+}
+
+/* Table View */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #444;
+  color: white;
+}
+
+.table td {
+  background-color: #333;
+}
+
+/* Pagination */
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activePage {
+  background-color: #2b8a67;
+}
